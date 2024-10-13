@@ -1,0 +1,97 @@
+/*==============================================
+    Car Brands
+===============================================*/
+.car-brands {
+    position: relative;
+    display: block;
+    padding: 136px 0 110px;
+    z-index: 1;
+}
+
+.car-brands__single {
+    position: relative;
+    display: block;
+    background-color: #DEDCD9;
+    padding: 4px 0 44px;
+    margin-bottom: 30px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.car-brands__single:hover {
+    transform: translateY(-10px);
+}
+
+.car-brands__img-box {
+    position: relative;
+    display: block;
+}
+
+.car-brands__img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.car-brands__img img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.car-brands__img img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    visibility: hidden;
+    height: 100%;
+    width: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.car-brands__single:hover .car-brands__img img:nth-child(2) {
+    width: 100%;
+    visibility: visible;
+}
+
+.car-brands__content {
+    position: relative;
+    display: block;
+    margin-top: -5px;
+}
+
+.car-brands__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.car-brands__title a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--kunbis-black);
+}
+
+.car-brands__title a:hover {
+    color: var(--kunbis-base);
+}
+
+.car-brands__title a span {
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

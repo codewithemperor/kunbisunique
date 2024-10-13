@@ -1,0 +1,92 @@
+/*==============================================
+    Enjoy One
+===============================================*/
+.enjoy-one {
+    position: relative;
+    display: block;
+}
+
+.enjoy-one__left {
+    position: relative;
+    display: block;
+    margin-right: 70px;
+}
+
+.enjoy-one__img {
+    position: relative;
+    display: block;
+}
+
+.enjoy-one__img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .45);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.enjoy-one__img img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.enjoy-one__right {
+    position: relative;
+    display: block;
+    margin-left: -285px;
+    background-color: var(--kunbis-white);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-top: 95px;
+}
+
+.enjoy-one__title-box {
+    position: relative;
+    display: block;
+    padding: 71px 50px 71px;
+}
+
+.enjoy-one__title {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 65px;
+}
+
+.enjoy-one__text {
+    margin-top: 21px;
+    margin-bottom: 37px;
+}
+
+.enjoy-one__btn-box {
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
