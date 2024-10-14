@@ -1,11 +1,4 @@
-﻿/*
--------------------------------------------------------------------------
-* Template Name    : Ctotek - Onepage Multi-Purpose HTML5 Template      *
-* Author           : ParExcellence                                      *
-* Version          : 1.0.0                                              *
-* File Description : Responsive Css file of the template                *
-*------------------------------------------------------------------------
-*/
+﻿
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1170px;
@@ -220,14 +213,24 @@
     }
 }
 
+
+/* PHONE */
 @media screen and (max-width: 480px) {
+    p {
+        font-size: 14px;
+    }
+
     .menu-wrapper .menu-links .main-menu > li {
         font-size: 20px;
         padding: 7px;
     }
 
     .top-navbar .container-fluid {
-        padding: 0 15px;
+        padding: 10px 15px;
+    }
+
+    .top-navbar .logo {
+        width: 120px;
     }
 
     .slider .parallax-slider .caption .dis {
@@ -270,9 +273,16 @@
         .slide-controls .swiper-button-prev:hover {
             left: 0 !important;
         }
+    
 
     .slider .parallax-slider .caption h2 {
-        font-size: 28px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .slider .parallax-slider .caption a {
+        text-align: center;
+        display: block;
     }
 
     .slider .parallax-slider .caption p {
@@ -308,6 +318,14 @@
         text-align: center;
         left: 0;
         bottom: 20px;
+    }
+
+    .section-head h3 {
+        font-size: 35px;
+    }
+
+    .section-head p {
+        font-size: 12px;
     }
 
     .company .img .icon {

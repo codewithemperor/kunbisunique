@@ -66,7 +66,7 @@ p {
     font-family: var(--kunbis-font);
     font-size: 15px;
     font-weight: 400;
-    color: #888;
+    color: var(--kunbis-black);
     margin: 0;
     line-height: 1.8;
 }
@@ -126,7 +126,6 @@ span, a, a:hover {
 
 .section-head h6 {
     font-size: 13px;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -136,12 +135,8 @@ span, a, a:hover {
 
 .section-head h3 {
     font-weight: 700;
-    /* font-size: 30px; */
 }
 
-.overflow-hidden {
-    overflow: hidden;
-}
 
 .bg-img {
     background-size: cover;
@@ -551,13 +546,6 @@ span, a, a:hover {
     transition: all .7s;
 }
 
-    .top-navbar .container,
-    .top-navbar .container-fluid {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-
     .top-navbar .container-fluid {
         padding: 0 50px;
     }
@@ -567,7 +555,6 @@ span, a, a:hover {
     }
 
     .top-navbar .menu-icon {
-        margin-left: auto;
         cursor: pointer;
     }
 
@@ -577,7 +564,7 @@ span, a, a:hover {
         }
 
         .top-navbar .menu-icon .text {
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 500;
             padding-left: 15px;
             display: table-cell;
@@ -836,21 +823,24 @@ span, a, a:hover {
 
 .company .content ul {
     margin: 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
 
     .company .content ul li {
         margin-top: 10px;
         padding-left: 25px;
         position: relative;
+        line-height: 150%;
     }
 
         .company .content ul li:after {
-            content: '⚠';
+            content: '✔';
             width: 10px;
             height: 10px;
             color: var(--kunbis-base);
-            border: 1px solid var(--kunbis-base);
-            border-radius: 50%;
+            /* border: 1px solid var(--kunbis-base); */
+            /* border-radius: 50%; */
             position: absolute;
             left: 0;
             top: 5px;
@@ -1125,40 +1115,7 @@ span, a, a:hover {
 .swiper-pagination-bullet-active {
     background: var(--kunbis-base);
 }
-/*=====================
-     14.QUOTE
-=====================*/
-.quote-block {
-    background: url(../img/about-two-img-1.jpg) center fixed;
-    background-size: cover;
-    position: relative;
-}
 
-    .quote-block .content h6 {
-        color: var(--kunbis-base);
-        font-size: 13px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 10px;
-    }
-
-        .quote-block .content h6 span {
-            color: var(--kunbis-base);
-        }
-
-    .quote-block .content h2 {
-        font-size: 30px;
-        line-height: 45px;
-        font-weight: 800;
-        margin-bottom: 20px;
-        color: var(--kunbis-white);
-    }
-
-    .quote-block .content p {
-        font-size: 17px;
-        font-weight: 300;
-    }
 /*=====================
      15.CONTACT
 =====================*/
@@ -1170,14 +1127,15 @@ span, a, a:hover {
 .contact-details {
     text-align: left;
     margin: 15px 0px;
-    display: block;
+    display: flex;
+    align-items: center;
     overflow: hidden;
 }
 
     .contact-details > i {
         font-size: 25px;
-        width: 60px;
-        height: 60px;
+        width: 60px !important;
+        height: 60px !important;
         background: var(--kunbis-base);
         line-height: 58px;
         color: var(--kunbis-white);
@@ -1212,13 +1170,13 @@ span, a, a:hover {
 .contact-area .form input, .contact-area .form textarea {
     width: 100%;
     padding: 10px 20px;
-    color: #000;
+    color: var(--kunbis-black);
     border: 0;
     padding-left: 5px;
     background-color: transparent;
     border-radius: 0px;
     text-transform: capitalize;
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid var(--kunbis-base);
 }
 
 .contact-area .form textarea {
