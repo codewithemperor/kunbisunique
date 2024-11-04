@@ -197,7 +197,7 @@ img {
     background-position: center center;
     background-size: auto 60px;
     top: 0;
-    margin-top: -40px;
+    padding-bottom: 40px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -403,6 +403,7 @@ img {
     -o-transition: all .3s ease;
 }
 
+
 .nav-item:hover {
     border-bottom: 2px solid var(--sColor);
     color: var(--dark);
@@ -454,24 +455,21 @@ img {
 ================================*/
 
 .banner {
-    min-height: 400px;
-    margin-bottom: 30px;
+    min-height: 550px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     position: relative;
 }
 
-
-
-.shape-1{
-    position: absolute !important;
-    top: 70px !important;
-    left: 90px !important;
-} 
-
-.shape-2 {
-    position: absolute !important;
-    top: 70px !important;
-    right: 90px !important;    
+.swipper-wrapper {
+    height: auto !important;
 }
+
+.banner-2 .title::before,
+.banner-2 .title::after{
+    background-color: #fff;
+}
+
 .shape-1 img,
 .shape-2 img{
     height: 100px;
@@ -486,6 +484,7 @@ img {
 .banner-header span {
     color: var(--pColor);
 }
+
 
 /*================================
      07.DIVISION
@@ -636,20 +635,40 @@ img {
     line-height: 150%;
 }
 
-.services .swiper {
+
+
+  .services .card {
+    border: 1px solid var(--pColor);
+  }
+
+  .services .card .card-img {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.services .card .card-img img{
     width: 100%;
     height: 100%;
-    padding-top: 50px;
-    /* padding-bottom: 50px; */
+    object-fit: cover;
   }
-  
-.services .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    /* width: 600px; */
-    height: 300px;
-     
+
+  .services .card .card-title{
+    color: var(--pColor);
   }
+
+  .services .card .btn-accent {
+    background-color: #575757;
+    border: 1px solid var(--tColor);
+    color: var(--light);
+    width: 100%;
+    margin-top: 5px;
+  }
+
 
 
 
@@ -916,6 +935,21 @@ img {
     transition: 0.4s ease-in-out;
 }
 
+textarea {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+input.form-control:hover,
+textarea:hover {
+    border: 1px solid var(--tColor);
+    background-color: rgba(53, 54, 58, .02);
+    box-shadow: 0 0 5px rgba(53, 54, 58, .2);
+}
+
 .contact-form-area input.form-control:focus {
     outline: none;
     border: 1px solid var(--tColor);
@@ -941,6 +975,8 @@ img {
 /*================================
      07.NEWSLETTER
 ================================*/
+
+
 
 .newsletter p {
     font-size: 35px;

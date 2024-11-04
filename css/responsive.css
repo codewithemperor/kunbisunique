@@ -8,7 +8,8 @@
         width: 83.33333333%;
     }
 
-    .mySwiper .swiper-slide {
+
+    .swiper .swiper-slide {
         width: 85% !important;
     }
 
@@ -76,7 +77,7 @@
         padding-bottom: 80px;
     }
 
-    .mySwiper .swiper-slide {
+    .swiper .swiper-slide {
         width: 40% !important;
     }
 
@@ -88,6 +89,15 @@
 
 @media (max-width: 991.98px) {
 
+    .dropdown-menu {
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+}
+
+      
     .shape-1{
         left: 40px !important;
     } 
@@ -217,10 +227,20 @@
         gap: 10px; 
         height: 400px; 
     }
+
+
+    .banner {
+        min-height: 450px;
+        position: relative;
+    }
 }
 
 /* Large  devices (desktop, 992px and up) */
 @media (min-width: 992px) { 
+    .nav-link, .dropdown-item {
+        font-size: 16px !important;
+    }
+    
     .division div+div {
         padding-bottom: 40px;
     }
@@ -270,7 +290,8 @@
         z-index: 3;
     }
 
-    .mySwiper .swiper-slide {
-        width: 22% !important;
+    .swiper .swiper-slide {
+        width: 28% !important;
+        height: 100%;
     }
 }

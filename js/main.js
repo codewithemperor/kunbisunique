@@ -10,19 +10,28 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    height: 100,
     coverflowEffect: {
-      rotate: 20,
+      rotate: 30,
       stretch: 0,
-      depth: 250,
+      depth: 350,
       modifier: 1,
       slideShadows: true,
     },
   });
 
+//   About Us Swipper - Our Services
+var swiper = new Swiper(".aboutUs", {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 15,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+  });
 
   
 
