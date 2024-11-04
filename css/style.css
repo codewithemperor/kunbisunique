@@ -128,6 +128,9 @@ img {
 /*======================
      03.PRELOADER
 ========================*/
+/*======================
+     03.PRELOADER
+========================*/
 .pace {
     pointer-events: none;
     user-select: none;
@@ -157,7 +160,7 @@ img {
         right: 100%;
         height: 100%;
         width: 100%;
-        background: var(--pColor);
+        background: var(--kunbis-base);
     }
 
     .pace.pace-inactive {
@@ -189,15 +192,16 @@ img {
     animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    background-image: url(../img/logo-black.png);
+    background-image: url(../img/kunbis_logo.webp);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 200px auto;
+    background-size: auto 60px;
     top: 0;
     margin-top: -40px;
     position: relative;
     width: 100%;
     height: 100%;
+    z-index: 9999999999;
     
   }
 
@@ -221,8 +225,6 @@ img {
 
     #preloader.isdone {
         visibility: hidden;
-        display: none;
-        overflow: hidden;
         transition-delay: 1.5s;
     }
 
