@@ -1,5 +1,5 @@
 AOS.init({
-    duration: 1000, // Duration of animation (in ms)
+    duration: 500, // Duration of animation (in ms)
   });
 
 

@@ -41,7 +41,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     color: var(--textColor);
     line-height: normal;
     font-weight: 400;
@@ -222,6 +222,7 @@ img {
     #preloader.isdone {
         visibility: hidden;
         display: none;
+        overflow: hidden;
         transition-delay: 1.5s;
     }
 
