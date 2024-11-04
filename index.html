@@ -1,879 +1,899 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED">
+        <title><?php echo isset($pageTitle) ? $pageTitle : "NEWFOUNDLAND EDUCATION & MANAGEMENT CONSULTING LIMITED"; ?></title>
+    
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+    
+        <!-- Select 2 -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Animate.css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+        <!-- Swipper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
-<head>
-    <!-- Metas -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="keywords"
-        content="Travel and Tours, Car Rental, Automobile Services, Real Estate Management, Property Sales, Vacation Planning, Luxury Car Rentals, Estate Advisory" />
-    <meta name="author" content="codewithemperor" />
-    <meta name="description"
-        content="Kunbis offers premium services in travel and tours, automobile rentals, and estate management. We ensure top-notch experiences for clients seeking vacation planning, real estate investment, and luxury car rentals." />
+        <!-- Pace -->
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    
+        <!-- AOS (Animate on Scroll) -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    <!-- Title  -->
-    <title>Kunbis - Travel, Automobile, and Estate Management Solutions</title>
+    
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
 
-    <!-- Favicon -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.html" />
+    </head>
+    <body>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap.css" />
-    <!-- Animate Css -->
-    <link rel="stylesheet" href="css/plugins/animate.css" />
-
-    <!-- Pace -->
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
-
-    <!-- FontAwesome Css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- ioicons Css -->
-    <link rel="stylesheet" href="css/plugins/ionicons.css" />
-    <!-- Magnific Popup Css -->
-
-    <link rel="stylesheet" href="css/plugins/magnific-popup.css" />
-    <!-- Slick Css -->
-    <link rel="stylesheet" href="css/plugins/slick.css" />
-    <link rel="stylesheet" href="css/plugins/slick-theme.css" />
-    <!-- Swiper Css -->
-    <link rel="stylesheet" href="css/plugins/swiper.css" />
-    <!-- Helper Css -->
-    <link rel="stylesheet" href="css/plugins/helper.css" />
-    <!-- Main Style Css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Responsive Style Css -->
-    <link rel="stylesheet" href="css/responsive.css" />
-</head>
-
-<body class="light">
-
-    <!-- Start Preloader -->
-    <div id="preloader">
-        <div class="loading-text"></div>
-        <div class="preloader__image"></div>
-    </div>
-    <!-- End Preloader -->
-
-    <!-- Start Scroll Top -->
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-    <!-- End Scroll Top -->
-
-    <!-- Start Header -->
-    <div id="nav-bar" class="top-navbar">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-            <div class="logo">
-                <a href="#"><img src="img/logo-light.png" alt=""></a>
-            </div>
-            <div class="menu-icon">
-                <span class="icon">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
-                <span class="text" data-splitting>Menu</span>
-            </div>
+        <!-- Start Preloader -->
+        <div id="preloader">
+            <div class="loading-text"></div>
+            <div class="preloader__image"></div>
         </div>
-    </div>
-    <!-- End Header -->
+        <!-- End Preloader -->
 
-    <!-- Start Navbar -->
-    <div class="menu-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-8">
-                    <div class="menu-links">
-                        <ul class="main-menu list-unstyled">
-                            <li>
-                                <div class="overflow-hidden">
-                                    <a href="#home" class="link"><span class="nm">01.</span>Home</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="overflow-hidden">
-                                    <a href="#about" class="link"><span class="nm">02.</span>About Us</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="overflow-hidden">
-                                    <a href="#services" class="link"><span class="nm">03.</span>Our Service</a>
-                                </div>
-                            </li>
-                            <!-- <li>
-                                <div class="overflow-hidden">
-                                    <a href="#portfolio" class="link"><span class="nm">03.</span>Portfolio</a>
-                                </div>
-                            </li> -->
-                            <li>
-                                <div class="overflow-hidden">
-                                    <a href="#testimonial" class="link"><span class="nm">04.</span>Testimonial</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="overflow-hidden">
-                                    <a href="#contact" class="link"><span class="nm">05.</span>Contact</a>
-                                </div>
-                            </li>
+        
+        <!-- Start Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light py-0 pt-2" aria-label="Fifth navbar example" >
+            <div class="container-fluid px-lg-4">
+              <a class="navbar-brand p-2" href="index.php">
+                <img src="img/kunbis_logo.webp" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse px-lg-4 justify-content-between" id="navbarsExample05">
+                <ul class="navbar-nav flex-grow-1 justify-content-lg-center m-3 my-lg-0 ms-lg-0">
+
+                    <li class="nav-item pe-lg-2">
+                        <a class="nav-link" href="about.php">Travel & Tours</a>
+                    </li>
+
+                    <li class="nav-item pe-lg-2">
+                        <a class="nav-link" href="about.php">Estate Management</a>
+                    </li>
+
+                    <li class="nav-item pe-lg-2">
+                        <a class="nav-link" href="about.php">Automobile</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown pe-lg-2">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Our Services</a>
+                        <ul class="dropdown-menu p-lg-3">
+                        <li><a class="dropdown-item p-3" href="canadian-visitor-visa.php">Canadian Visitor Visa</a></li>
+                        <li><a class="dropdown-item p-3" href="canada-work-permit.php">Canada Work Permit</a></li>
+                        <li><a class="dropdown-item p-3" href="immigrate-to-canada.php">Immigrate to Canada</a></li>
+                        <li><a class="dropdown-item p-3" href="express-entry.php">Express Entry</a></li>
+                        <li><a class="dropdown-item p-3" href="pronvicial-nominee-program.php">Pronvicial Nominee Program (PNP)</a></li>
+                        <li><a class="dropdown-item p-3" href="atlantic-immigration-program.php">Atlantic Immigration Program (AIP)</a></li>
+                        <li><a class="dropdown-item p-3" href="sponsorship.php">Sponsorship</a></li>
+                        <li><a class="dropdown-item p-3" href="canadian-citizenship-immigration.php">Canadian Citizenship Immigration</a></li>
+
                         </ul>
-                    </div>
+                    </li>
+                   
+                    <li class="nav-item pe-lg-2">
+                        <a class="nav-link" href="about.php">About us</a>
+                    </li>
+                    <li class="nav-item pe-lg-2">
+                        <a class="nav-link" href="contact.php">Contact us</a>
+                    </li>
+                </ul>
+
+                <div class="flex-shrink-0">
+                    <a href="apply.php" class="btn btn-accent p-2 px-3 mb-5 mb-lg-0 ms-3 ms-lg-0">Get Instant Visa</a>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End Navbar -->
+        </nav>
+        <!-- End Navbar -->
 
-    <!-- Start Wrapper -->
-    <div class="wrapper">
-        <!-- Start Slider -->
-        <section class="slider fixed-slider slide-controls" id="home">
-            <div class="swiper-container parallax-slider">
-                <div class="swiper-wrapper">
-
-                    <!-- Slide 1: Travel and Tour -->
-                    <div class="swiper-slide">
-                        <div class="bg-img v-align-center" data-background="img/banner/new-destination.webp"
-                            data-overlay-dark="3">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 offset-lg-1">
-                                        <div class="caption">
-                                            <h2 data-splitting>
-                                                <a href="#">
-                                                    Explore <br> New Destinations
-                                                </a>
-                                            </h2>
-                                            <a href="#" class="dis" data-splitting>Discover Tours</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Start Banner -->
+        <section class="banner py-5 position-relative" data-aos="fade-up">
+            <div class="shape-1 position-absolute" data-aos="fade-right">
+                <img src="img/svg/shape_1.png" alt="img" data-aos="zoom-in">
+            </div>
+            <div class="shape-2 position-absolute top-0 end-0" data-aos="fade-left">
+                <img src="img/svg/shape_5.png" alt="img" data-aos="zoom-in">
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="text-center col-md-9 col-lg-8">
+                        <h1 class="banner-header display-1 my-3 px-1" data-aos="flip-up">The best place to get your <span id="typed-text" data-aos="fade-up"></span></h1>
+                        <p class="mb-3 px-3" data-aos="fade-up">Discover top-quality services across Travel & Tours, Estate Management, and Automobile solutions. We provide everything you need in one place, ensuring convenience and satisfaction.</p>
+                        <a href="#" class="btn btn-accent px-5 py-3" data-aos="flip-up">Get Started</a>
                     </div>
-
-                    <!-- Slide 2: Visa Package -->
-                    <div class="swiper-slide">
-                        <div class="bg-img v-align-center" data-background="img/banner/visa-assistance.jpg"
-                            data-overlay-dark="3">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 offset-lg-1">
-                                        <div class="caption">
-                                            <h2 data-splitting>
-                                                <a href="#">
-                                                    Hassle-Free <br> Visa Assistance
-                                                </a>
-                                            </h2>
-                                            <a href="#" class="dis" data-splitting>Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3: Estate Management -->
-                    <div class="swiper-slide">
-                        <div class="bg-img v-align-center" data-background="img/banner/house.webp"
-                            data-overlay-dark="5">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 offset-lg-1">
-                                        <div class="caption">
-                                            <h2 data-splitting>
-                                                <a href="#">
-                                                    Premium <br> Estate Solutions
-                                                </a>
-                                            </h2>
-                                            <a href="#" class="dis" data-splitting>View Properties</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 4: Buying and Selling Cars -->
-                    <div class="swiper-slide">
-                        <div class="bg-img v-align-center" data-background="img/banner/car-bg.webp"
-                            data-overlay-dark="3">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 offset-lg-1">
-                                        <div class="caption">
-                                            <h2 data-splitting>
-                                                <a href="#">
-                                                    Buy or Sell <br> Your Dream Car
-                                                </a>
-                                            </h2>
-                                            <a href="https://automobile.kunbisunique.com/" class="dis"
-                                                data-splitting>Browse Cars</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- slider setting -->
-                <div class="swiper-button-next swiper-nav-ctrl next-ctrl">
-                    <i class="fas fa-caret-right"></i>
-                </div>
-                <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl">
-                    <i class="fas fa-caret-left"></i>
-                </div>
-                <div class="swiper-pagination"></div>
             </div>
         </section>
-        <!-- End Slider -->
+        <!-- End Banner -->
 
-        <!-- Start About -->
-        <div class="main-content">
 
-            <!-- Start Company -->
-            <section class="company section" id="about">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="content">
-                                <div class="section-head mb-3">
-                                    <p class="wow">About Kunbis</p>
-                                    <h3 class="wow display-4" data-splitting">Our History</h3>
-                                </div>
+        <!-- Start Devision Section -->
+        <section class="division py-5" id="devision">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="title mb-5" data-aos="fade-down">Our Division</h2>
+                </div>
+            </div>
 
-                                <p class="wow fadeIn mb-3" data-wow-delay=".2s">
-                                    With over 15 years of experience, Kunbis Unique Ventures has been delivering
-                                    outstanding services
-                                    in Travel and Tours, Estate Management, and Automobile. Our dedication goes beyond
-                                    just meeting
-                                    industry standards; we aim to elevate your business and lifestyle through tailored
-                                    solutions.
-                                </p>
-                                <ul class="list-unstyled ms-2">
-                                    <li class="wow fadeInUp" data-wow-delay=".2s">
-                                        Registered with the Nigerian government and committed to quality service.
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay=".4s">
-                                        A long-standing reputation built over 15+ years in business.
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay=".6s">
-                                        Professional expertise across our subdivisions: Travel & Tours, Estate
-                                        Management, and Automobile.
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay=".8s">
-                                        We offer free initial consultation and personalized support to meet your unique
-                                        needs.
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="1s">
-                                        Our services are trusted by some of the most successful businesses and clients.
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="1.2s">
-                                        A dedicated team of professionals committed to driving growth and delivering
-                                        results.
-                                    </li>
-                                </ul>
+            <div class="row px-4 px-md-5">
+                <!-- Card 1 -->
+                <a href="#" class="col-md-4 division_card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="division-item" style="background: url(img/banner/new-destination.webp); background-size: cover;">
+                        <div class="division-item__text">
+                            <h3 data-aos="fade-right" data-aos-delay="200">Travel & Tours</h3>
+                            <p data-aos="fade-left" data-aos-delay="300">Experience affordable travel packages, luxury vacations, and seamless bookings.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="#" class="col-md-4 division_card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="division-item" style="background: url(img/banner/house.webp); background-size: cover;">
+                        <div class="division-item__text">
+                            <h3 data-aos="fade-right" data-aos-delay="400">Estate Management</h3>
+                            <p data-aos="fade-left" data-aos-delay="500">Find prime properties, professional management, and housing solutions tailored for you.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="#" class="col-md-4 division_card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="division-item" style="background: url(img/banner/car-bg.webp); background-size: cover;">
+                        <div class="division-item__text" >
+                            <h3 data-aos="fade-right" data-aos-delay="600">Automobile</h3>
+                            <p data-aos="fade-left" data-aos-delay="700">Get quality car sales, rentals, and trusted auto servicing all in one place.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- End Division Section -->
+
+        <!-- Start About us -->
+        <section class="company section" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Section Title -->
+                    <div class="col-12 text-center">
+                        <h2 class="title mb-5" data-aos="fade-down" data-aos-delay="100">Our History</h2>
+                    </div>
+
+                    <!-- Content Section -->
+                    <div class="col-lg-6 px-3">
+                        <div class="content" data-aos="fade-right" data-aos-delay="200">
+                            <div class="section-head mb-3">
+                                <h3 class="display-5" data-aos="fade-up" data-aos-delay="300">About Kunbis</h3>
                             </div>
 
+                            <p class="mb-3" data-aos="fade-up" data-aos-delay="400">
+                                With over 15 years of experience, Kunbis Unique Ventures has been delivering outstanding
+                                services in Travel and Tours, Estate Management, and Automobile. Our dedication goes beyond just meeting industry standards; we aim to elevate your business and lifestyle through tailored solutions.
+                            </p>
+
+                            <ul class="list-unstyled ms-2">
+                                <li data-aos="fade-up" data-aos-delay="500">Registered with the Nigerian government and committed to quality service.</li>
+                                <li data-aos="fade-up" data-aos-delay="600">A long-standing reputation built over 15+ years in business.</li>
+                                <li data-aos="fade-up" data-aos-delay="700">Professional expertise across our subdivisions: Travel & Tours, Estate Management, and Automobile.</li>
+                                <li data-aos="fade-up" data-aos-delay="800">We offer free initial consultation and personalized support to meet your unique needs.</li>
+                                <li data-aos="fade-up" data-aos-delay="900">Our services are trusted by some of the most successful businesses and clients.</li>
+                                <li data-aos="fade-up" data-aos-delay="1000">A dedicated team of professionals committed to driving growth and delivering results.</li>
+                            </ul>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="img d-flex position-relative">
-                                <div class="imgone wow fadeInDown" data-wow-delay=".8s">
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="col-lg-6">
+                        <div class="img d-flex position-relative">
+                            <div class="imgone" data-aos="fade-down" data-aos-delay="600">
+                                <div class="simpleParallax" style="overflow: hidden;">
                                     <img class="thumparallax-down" src="img/about-two-img-3.jpg" alt="">
                                 </div>
-                                <div class="imgtwo wow fadeInUp" data-wow-delay=".6s">
+                            </div>
+                            <div class="imgtwo" data-aos="fade-up" data-aos-delay="800">
+                                <div class="simpleParallax" style="overflow: hidden;">
                                     <img class="thumparallax" src="img/about-two-img-1.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End Company -->
+            </div>
+        </section>
 
-            <!-- Start Services -->
-            <section class="services-section section bg-light" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="section-head mb-3">
-                                <p class="wow">Know Us Better</p>
-                                <h3 class="wow display-4" data-splitting>Our Best Services</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <p class="wow fadeIn" data-wow-delay=".1s">
-                                At Kunbis Unique Ventures, we offer a diverse range of services tailored to meet the
-                                needs of our clients. With over 15 years of experience in the industry, our expertise
-                                spans across various sectors, ensuring you receive the best service possible.
-                            </p>
-                        </div>
+        <!-- End About us -->
 
-                        <a href="visa-application.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/visa.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-passport"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>VISA APPLICATIONS</h5>
-                                    <p class="text-white">
-                                        We help with your visa applications for a smooth travel experience.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="flight-reservation.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/flight.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-plane"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>FLIGHT RESERVATION</h5>
-                                    <p class="text-white">
-                                        Book your flights effortlessly with our flight reservation services.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="hotel-reservation.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/hotel.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-hotel"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>HOTEL RESERVATION</h5>
-                                    <p class="text-white">
-                                        We help you find the best hotel deals and make reservations.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Sales of New Cars -->
-                        <a href="https://automobile.kunbisunique.com/listing-grid.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/new-car.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-car-side"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>NEW CAR SALES</h5>
-                                    <p class="text-white">
-                                        We provide a variety of brand-new cars to meet your taste and lifestyle.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="travel-insurance.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/insurance.jpg">
-                                </div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>TRAVEL INSURANCE</h5>
-                                    <p class="text-white">
-                                        Protect your travels with our travel insurance packages.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="tour-package.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/tour.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-globe"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>TOUR PACKAGE</h5>
-                                    <p class="text-white">
-                                        Explore new places with our customized tour packages.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="passport-application.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/passport.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-id-card"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>PASSPORT APPLICATION</h5>
-                                    <p class="text-white">
-                                        Get assistance with your passport applications to travel hassle-free.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="proof-of-funds.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/funds.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-money-bill-wave"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>PROOF OF FUNDS</h5>
-                                    <p class="text-white">
-                                        We assist in providing proof of funds for your travel and residency needs.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Sales of Imported Used Cars -->
-                        <a href="https://automobile.kunbisunique.com/listing-grid.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img"
-                                    data-background="img/services/imported-used-car.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-car-rear"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>IMPORTED USED CAR SALES</h5>
-                                    <p class="text-white">
-                                        Get the best deals on imported used cars with top-notch quality and performance.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="supporting-document.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/documents.jpg">
-                                </div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-file-alt"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>SUPPORTING DOCUMENT</h5>
-                                    <p class="text-white">
-                                        We provide assistance in obtaining necessary supporting documents.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="real-estate-management.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/realestate.jpg">
-                                </div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-home"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>REAL ESTATE MANAGEMENT</h5>
-                                    <p class="text-white">
-                                        Comprehensive management services for your real estate needs.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="land-sales.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/land.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-landmark"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>LAND SALES</h5>
-                                    <p class="text-white">
-                                        We facilitate land sales and ensure a smooth transaction.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Sales of Local Used Cars -->
-                        <a href="https://automobile.kunbisunique.com/listing-grid.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/local-used-car.jpg">
-                                </div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fa-solid fa-car-on"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>LOCAL USED CAR SALES</h5>
-                                    <p class="text-white">
-                                        Find affordable local used cars in great condition to suit your budget.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="leasing-office-spaces.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/leasing.jpg"></div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-building"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>LEASING OF OFFICE SPACES</h5>
-                                    <p class="text-white">
-                                        We help you find the perfect office space for your business needs.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="leasing-apartments.html" class="col-md-4">
-                            <div class="w-100 box-hover position-relative items">
-                                <div class="steps-hover-thumb bg-img" data-background="img/services/apartment.jpg">
-                                </div>
-                                <div class="item wow z-index-2 fadeIn" data-wow-delay=".3s">
-                                    <span class="icon d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-building"></i>
-                                    </span>
-                                    <h5 class="text-white wow" data-splitting>LEASING OF APARTMENTS</h5>
-                                    <p class="text-white">
-                                        Secure the best deals for apartment leasing through our services.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+        <!-- WHY Kunbis Unique Venture -->
+        <section class="why">
+            <div class="container px-3 px-md-0">
+                <div class="col-12 text-center">
+                    <h2 class="title mb-5" data-aos="fade-down" data-aos-delay="100">Why choose Kunbis Unique Venture?</h2>
                 </div>
-            </section>
-            <!-- End Services -->
 
+                <div class="row mt-4 mt-md-5 row-cols row-cols-md-2 row-cols-lg-3 row-gap-4">
+                    <!-- Card 1 -->
+                    <div class="col-sm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <i class="fa fa-plane" data-aos="zoom-in" data-aos-delay="300"></i>
+                                <p class="card-title mb-2" data-aos="fade-up" data-aos-delay="400">Expert Travel Packages</p>
+                                <p data-aos="fade-up" data-aos-delay="500">Enjoy customized travel packages with seamless bookings, luxury accommodations, and exclusive tours that cater to your needs.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Start Testimonials -->
-            <section class="testimonials section " id="testimonial">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-head mb-2">
-                                <p class="wow">Our Testimonials</p>
-                                <h3 class="wow display-4" data-splitting>What Our Clients Say</h3>
+                    <!-- Card 2 -->
+                    <div class="col-sm" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <i class="fa fa-home" data-aos="zoom-in" data-aos-delay="400"></i>
+                                <p class="card-title mb-2" data-aos="fade-up" data-aos-delay="500">Real Estate Services</p>
+                                <p data-aos="fade-up" data-aos-delay="600">Discover prime properties and professional estate management with tailored solutions for buying, renting, or investment opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-sm" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <i class="fa fa-car" data-aos="zoom-in" data-aos-delay="500"></i>
+                                <p class="card-title mb-2" data-aos="fade-up" data-aos-delay="600">Reliable Automobile Solutions</p>
+                                <p data-aos="fade-up" data-aos-delay="700">Access quality car sales, rentals, and maintenance services to ensure your vehicle needs are met with trust and expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-sm" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <i class="fa fa-globe" data-aos="zoom-in" data-aos-delay="600"></i>
+                                <p class="card-title mb-2" data-aos="fade-up" data-aos-delay="700">Global Reach</p>
+                                <p data-aos="fade-up" data-aos-delay="800">With a presence in multiple regions, we offer services that cater to both local and international clients across all our sectors.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-sm" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <i class="fa fa-star" data-aos="zoom-in" data-aos-delay="700"></i>
+                                <p class="card-title mb-2" data-aos="fade-up" data-aos-delay="800">Customer-Centric Approach</p>
+                                <p data-aos="fade-up" data-aos-delay="900">We prioritize customer satisfaction with personalized support, tailored solutions, and a commitment to meeting your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-sm" data-aos="fade-up" data-aos-delay="700">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <i class="fa fa-calendar-check" data-aos="zoom-in" data-aos-delay="800"></i>
+                                <p class="card-title mb-2" data-aos="fade-up" data-aos-delay="900">Tailored Guidance</p>
+                                <p data-aos="fade-up" data-aos-delay="1000">Receive expert advice and support from our dedicated team to help you make informed decisions in travel, real estate, and automobile services.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row no-gutters mt-4">
-                        <div class="col-lg-12">
-                            <div class="quote position-relative">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide p-5">
-                                            <h4>Travel Planning</h4>
-                                            <p class="my-3">The travel planning services were excellent. They handled
-                                                all our travel arrangements seamlessly, from booking flights to
-                                                arranging hotel accommodations, making our vacation truly stress-free.
-                                            </p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Olumide Adeyemi</h5>
-                                                <p>Travel Enthusiast</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Car Rental</h4>
-                                            <p class="my-3">The car rental process was smooth, and the vehicle provided
-                                                was in top condition. We appreciated the affordable rates and prompt
-                                                customer service. Definitely a great choice for car rentals!</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Chinaza Okeke</h5>
-                                                <p>Business Traveler</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Real Estate Management</h4>
-                                            <p class="my-3">We entrusted them with managing our property, and they
-                                                delivered beyond our expectations. The attention to detail and regular
-                                                updates gave us peace of mind, knowing our investment was in good hands.
-                                            </p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Adebayo Olayinka</h5>
-                                                <p>Property Owner</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Tour Packages</h4>
-                                            <p class="my-3">Their tour packages were well-organized and offered a
-                                                variety of activities. We had an amazing time exploring new places,
-                                                thanks to their knowledgeable guides and well-planned itineraries.</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Titi Bakare</h5>
-                                                <p>Adventure Seeker</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Vehicle Purchase Assistance</h4>
-                                            <p class="my-3">Buying a car was a breeze with their assistance. They guided
-                                                us through the entire process, from selecting the right vehicle to
-                                                handling paperwork, ensuring we got the best deal.</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Bola Adelakun</h5>
-                                                <p>First-Time Car Buyer</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Property Sales</h4>
-                                            <p class="my-3">The team made selling our property easy and stress-free.
-                                                Their expertise and market knowledge helped us close the deal quickly
-                                                and at a good price. Highly recommend their services!</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Nkechi Umeh</h5>
-                                                <p>Home Seller</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Travel Insurance</h4>
-                                            <p class="my-3">They offered comprehensive travel insurance that covered all
-                                                our needs, including medical emergencies and cancellations. It gave us
-                                                peace of mind throughout our trip.</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Chidera Obasi</h5>
-                                                <p>Frequent Flyer</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Luxury Car Rentals</h4>
-                                            <p class="my-3">We rented a luxury car for a special occasion, and it was an
-                                                unforgettable experience. The vehicle was in perfect condition, and the
-                                                service was top-notch. Highly recommended!</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Segun Adedayo</h5>
-                                                <p>Event Planner</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Vacation Planning</h4>
-                                            <p class="my-3">They helped us plan the perfect family vacation, taking care
-                                                of everything from flight bookings to hotel reservations. It was an
-                                                amazing experience with no hassles!</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Yewande Ojo</h5>
-                                                <p>Family Traveler</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide p-5">
-                                            <h4>Estate Advisory Services</h4>
-                                            <p class="my-3">Their estate advisory services were invaluable. They
-                                                provided expert guidance on investment opportunities, helping us make
-                                                informed decisions regarding our real estate portfolio.</p>
-                                            <div class="author-info text-right w-100">
-                                                <h5>Kehinde Alabi</h5>
-                                                <p>Investor</p>
+            </div>
+        </section>
+        <!-- WHY Kunbis Unique Venture ends -->
+
+        
+        <!-- Our services -->
+        <section class="services">
+            <div class="col-12 text-center mb-5 px-3 ">
+                <h2 class="title mb-1" data-aos="fade-down" data-aos-delay="100">Our Services</h2>
+                <p class="col-md-9 mx-auto" data-aos="fade-down" data-aos-delay="200">At Kunbis Unique Ventures, we offer a diverse range of services tailored to meet the needs of our clients. With over 15 years of experience in the industry, our expertise spans across various sectors, ensuring you receive the best service possible.</p>
+            </div>
+            
+            <div class="swiper mySwiper" data-aos="zoom-in" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide p-5 border rounded-2 bg-primary">
+                        <div class=" service-list">
+                            <i class="fas fa-passport text-white mb-4"></i>
+                            <p class="fs-4 fw-bold text-white">VISA APPLICATIONS</p>
+                            <p class="text-white text-wrap">We help with your visa applications for a smooth travel experience.</p>
+                        </div> 
+                    </div>
+
+                    <div class="swiper-slide p-5 border rounded-2 bg-success">
+                        <div class=" service-list">
+                            <i class="fas fa-passport text-white mb-4"></i>
+                            <p class="fs-4 fw-bold text-white">VISA APPLICATIONS</p>
+                            <p class="text-white text-wrap">We help with your visa applications for a smooth travel experience.</p>
+                        </div> 
+                    </div>
+
+                    <div class="swiper-slide p-5 border rounded-2 bg-danger">
+                        <div class=" service-list">
+                            <i class="fas fa-passport text-white mb-4"></i>
+                            <p class="fs-4 fw-bold text-white">VISA APPLICATIONS</p>
+                            <p class="text-white text-wrap">We help with your visa applications for a<br/> smooth travel experience.</p>
+                        </div> 
+                    </div>
+
+                    <div class="swiper-slide p-5 border rounded-2 bg-warning">
+                        <div class=" service-list">
+                            <i class="fas fa-passport text-white mb-4"></i>
+                            <p class="fs-4 fw-bold text-white">VISA APPLICATIONS</p>
+                            <p class="text-white text-wrap">We help with your visa applications for a smooth travel experience.</p>
+                        </div> 
+                    </div>
+
+                    <div class="swiper-slide p-5 border rounded-2 bg-secondary">
+                        <div class=" service-list">
+                            <i class="fas fa-passport text-white mb-4"></i>
+                            <p class="fs-4 fw-bold text-white">VISA APPLICATIONS</p>
+                            <p class="text-white text-wrap">We help with your visa applications for a<br/> smooth travel experience.</p>
+                        </div> 
+                    </div>
+
+                    <div class="swiper-slide p-5 border rounded-2 bg-dark">
+                        <div class=" service-list">
+                            <i class="fas fa-passport text-white mb-4"></i>
+                            <p class="fs-4 fw-bold text-white">VISA APPLICATIONS</p>
+                            <p class="text-white text-wrap">We help with your visa applications for a smooth travel experience.</p>
+                        </div> 
+                    </div>
+
+                    <div class="swiper-slide p-5 border rounded-2 bg-info">
+                        <div class=" service-list">
+                            <i class="fas fa-passport text-white mb-4"></i>
+                            <p class="fs-4 fw-bold text-white">VISA APPLICATIONS</p>
+                            <p class="text-white text-wrap">We help with your visa applications for a<br/> smooth travel experience.</p>
+                        </div> 
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+
+           
+
+        </section>
+        <!-- End our services -->
+
+        <!-- Start FAQ -->
+        <section class="faq">
+            <div class="container" data-aos="fade-up">
+                <div class="row align-items-center">
+
+                    <div class="col-12 text-center">
+                        <h2 class="title mb-5" data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="img-box3">
+                            <div class="img1 col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                                <img src="img/about_3_3.jpg" alt="About" />
+                            </div>
+                            <div class="img2 col-lg-7" data-aos="zoom-in" data-aos-delay="300">
+                                <img src="img/about_3_3.jpg" alt="About" />
+                            </div>
+                            <div class="img3 col-lg-5" data-aos="zoom-in" data-aos-delay="400">
+                                <img src="img/about_3_3.jpg" alt="About" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row row-cols-1 gap-3 my-4">
+                            <div class="col">
+                                <div class="accordion" id="faqAccordion">
+                            
+                                    <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one" aria-expanded="false" aria-controls="faq-one" data-aos="fade-right">
+                                                Do you offer student visa assistance?
+                                            </button>
+                                        </h2>
+                                        <div id="faq-one" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body" data-aos="fade-up" data-aos-delay="150">
+                                                Yes, we assist students in obtaining visas for their chosen study destinations. Our services include helping with the application process, preparing necessary documents, and providing guidance on visa interviews.
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- slider setting -->
-                                    <div class="swiper-pagination position-relative"></div>
+
+                                    <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="200">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-two" aria-expanded="false" aria-controls="faq-two" data-aos="fade-right">
+                                                Do you have tour packages?
+                                            </button>
+                                        </h2>
+                                        <div id="faq-two" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body" data-aos="fade-up" data-aos-delay="250">
+                                                Yes, we offer a variety of tour packages tailored to different interests and budgets. Whether you're looking for adventure, cultural experiences, or relaxation, we have something for everyone.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="300">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-three" aria-expanded="false" aria-controls="faq-three" data-aos="fade-right">
+                                                Do you sell land and properties?
+                                            </button>
+                                        </h2>
+                                        <div id="faq-three" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body" data-aos="fade-up" data-aos-delay="350">
+                                                Yes, we offer services for buying and selling land and properties. Our team can help you find the perfect location and guide you through the purchasing process to ensure a smooth transaction.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="400">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-four" aria-expanded="false" aria-controls="faq-four" data-aos="fade-right">
+                                                Can you help with travel insurance?
+                                            </button>
+                                        </h2>
+                                        <div id="faq-four" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body" data-aos="fade-up" data-aos-delay="450">
+                                                Yes, we can assist you in selecting and purchasing travel insurance. We provide options for coverage that includes medical expenses, trip cancellations, and lost luggage, ensuring you travel with peace of mind.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="500">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-five" aria-expanded="false" aria-controls="faq-five" data-aos="fade-right">
+                                                Do you arrange flights and accommodation?
+                                            </button>
+                                        </h2>
+                                        <div id="faq-five" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body" data-aos="fade-up" data-aos-delay="550">
+                                                Yes, we offer complete travel arrangements, including flight bookings and accommodation reservations. Whether you need budget-friendly options or luxury stays, we can find the best deals for you.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item mb-3" data-aos="fade-left" data-aos-delay="600">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-six" aria-expanded="false" aria-controls="faq-six" data-aos="fade-right">
+                                                How can I pay for your services?
+                                            </button>
+                                        </h2>
+                                        <div id="faq-six" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body" data-aos="fade-up" data-aos-delay="650">
+                                                We accept various payment methods, including bank transfers, credit/debit cards, and online payment platforms. For international clients, we can facilitate secure cross-border payment options.
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End Testimonials -->
+            </div>
+        </section>
+        <!-- Ends FAQ -->
 
+        <!-- Start Our Staff -->        
+        <section class="team">
+            <div class="px-4">
+                <div class="col-12 text-center">
+                    <p data-aos="fade-up">Meet Our Dedicated Staff</p>
+                    <h2 class="title mb-5 mt-0" data-aos="fade-up">Expert Behind Our Success</h2>
+                </div>
+       
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team_single" data-aos="zoom-in">
+                            <div class="team_img-box">
+                                <div class="team_img">
+                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
+                                </div>
+                            </div>
+                            <div class="team_content p-2 text-center">
+                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
+                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
 
-            <!-- Start Contact -->
-            <section id="contact" class="contact-area section bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-head">
-                                <p class="wow">Need Help!</p>
-                                <h3 class="wow display-4 mb-3" data-splitting>Contact Us Now.</h3>
+                                <ul class="team_social list-unstyled d-flex justify-content-center">
+                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
+                                </ul>
+                        
+                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
+                                    <i class="fa fa-phone"></i>
+                                    <p>+234 803 400 77781</p>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="contact-information wow fadeInUp" data-wow-delay="0.2s"
-                                data-wow-duration="1.5s">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team_single" data-aos="zoom-in">
+                            <div class="team_img-box">
+                                <div class="team_img">
+                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
+                                </div>
+                            </div>
+                            <div class="team_content p-2 text-center">
+                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
+                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
+
+                                <ul class="team_social list-unstyled d-flex justify-content-center">
+                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
+                                </ul>
+                        
+                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
+                                    <i class="fa fa-phone"></i>
+                                    <p>+234 803 400 77781</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team_single" data-aos="zoom-in">
+                            <div class="team_img-box">
+                                <div class="team_img">
+                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
+                                </div>
+                            </div>
+                            <div class="team_content p-2 text-center">
+                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
+                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
+
+                                <ul class="team_social list-unstyled d-flex justify-content-center">
+                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
+                                </ul>
+                        
+                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
+                                    <i class="fa fa-phone"></i>
+                                    <p>+234 803 400 77781</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team_single" data-aos="zoom-in">
+                            <div class="team_img-box">
+                                <div class="team_img">
+                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
+                                </div>
+                            </div>
+                            <div class="team_content p-2 text-center">
+                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
+                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
+
+                                <ul class="team_social list-unstyled d-flex justify-content-center">
+                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
+                                </ul>
+                        
+                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
+                                    <i class="fa fa-phone"></i>
+                                    <p>+234 803 400 77781</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+        <!-- End Our Staff -->
+
+        
+        <!-- Start Contact us -->
+        <section class="contact overflow-hidden" data-aos="fade-up">
+            <div class="container">
+                <div class="row gy-4 justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <div class="p-lg-0">
+                            <div class="title-area pe-xl-5">
+                                <span class="sub-title text-white" data-aos="fade-down">Get in touch</span>
+                                <h2 class="sec-title text-white display-4 my-2" data-aos="fade-up">Say hello to us</h2>
+                                <p class="contact-text text-white" data-aos="fade-up" data-aos-delay="100">We’d love to hear from you. Our friendly team is always here to chat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="contact-form-area p-4 py-5" data-aos="fade-left">
+                            <form action="">
                                 <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="contact-details">
-                                            <i class="fas fa-phone"></i>
-                                            <div class="">
-                                                <p>Call us</p>
-                                                <h6><a href="tel:+2348034007778">+234 803 400 7778</a> </h6>
-                                                <h6><a href="tel:+2348102827281">+234 810 282 7281</a></h6>
-                                            </div>
+                                    <div class="text-start mb-3">
+                                        <label for="fullName" class="form-label fw-bold" data-aos="fade-right">Full Name</label>
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control ps-3" name="fullName" id="fullName" placeholder="Enter your full name" data-aos="fade-up" data-aos-delay="200">
+                                            <img src="img/svg/user.svg" alt="" class="me-3 position-absolute top-50 end-0 translate-middle-y" data-aos="zoom-in" data-aos-delay="300">
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <div class="contact-details row">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <div class="col px-0">
-                                                <p class="">Visit us</p>
-                                                <h6 class="">Suite 107, Kofoworola Shopping Complex, 7up Bus Stop,
-                                                    Monatan, Iwo Road, Ibadan, Oyo State</h6>
-                                            </div>
+
+                                    <div class="text-start mb-3">
+                                        <label for="email" class="form-label fw-bold" data-aos="fade-right">Email address</label>
+                                        <div class="position-relative">
+                                            <input type="email" class="form-control ps-3" name="email" id="email" placeholder="Enter Email Address" data-aos="fade-up" data-aos-delay="200">
+                                            <img src="img/svg/mail.svg" alt="" class="me-3 position-absolute top-50 end-0 translate-middle-y" data-aos="zoom-in" data-aos-delay="300">
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <div class="contact-details">
-                                            <i class="fas fa-paper-plane"></i>
-                                            <div class="">
-                                                <p>Email </p>
-                                                <h6><a
-                                                        href="mailto:support@kunbisunique.com"></a>support@kunbisunique.com
-                                                </h6>
-                                            </div>
+
+                                    <div class="text-start mb-3">
+                                        <label for="subject" class="form-label fw-bold" data-aos="fade-right">Your Subject</label>
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control ps-3" name="subject" id="subject" placeholder="Enter a subject" data-aos="fade-up" data-aos-delay="200">
+                                            <img src="img/svg/chat.svg" alt="" class="me-3 position-absolute top-50 end-0 translate-middle-y" data-aos="zoom-in" data-aos-delay="300">
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <div class="contact-details">
-                                            <i class="fas fa-share-alt"></i>
-                                            <div class="">
-                                                <p>Social Media </p>
-                                                <ul class="social-icons mb-0 list-unstyled d-flex align-items-center">
-                                                    <li class="mr-2"><a href="#" target="_blank"><i
-                                                                class="fab fa-facebook-square"></i></a></li>
-                                                    <li class="mr-2"><a href="#" target="_blank"><i
-                                                                class="fab fa-twitter"></i></a></li>
-                                                    <li class="mr-2"><a href="#" target="_blank"><i
-                                                                class="fab fa-instagram"></i></a></li>
-                                                    <li class="mr-2"><a href="#" target="_blank"><i
-                                                                class="fab fa-whatsapp"></i></a></li>
-                                                </ul>
+
+                                    <div class="text-start mb-3">
+                                        <label for="message" class="form-label fw-bold" data-aos="fade-right">Your Message</label>
+                                        <div class="position-relative">
+                                            <textarea name="message" id="message" rows="5" placeholder="Your Message" class="form-control" data-aos="fade-up" data-aos-delay="200"></textarea>
+                                            <img src="img/svg/chat.svg" alt="" class="me-3 mt-3 position-absolute top-0 end-0" data-aos="zoom-in" data-aos-delay="300">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-btn mt-3" data-aos="fade-up" data-aos-delay="400">
+                                        <button type="submit" class="btn btn-accent px-5 p-3">
+                                            Send Message 
+                                            <div class="d-inline-block">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.0477 3.05293C18.8697 0.707361 2.48648 6.4532 2.50001 8.551C2.51535 10.9299 8.89809 11.6617 10.6672 12.1581C11.7311 12.4565 12.016 12.7625 12.2613 13.8781C13.3723 18.9305 13.9301 21.4435 15.2014 21.4996C17.2278 21.5892 23.1733 5.342 21.0477 3.05293Z" stroke="white" stroke-width="1.5"/>
+                                                    <path d="M11.5 12.5L15 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact us -->
+
+        <!-- Start Newsletter Section -->
+        <section class="newsletter" data-aos="fade-up">
+            <div class="container">
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <div class="col-md-5" data-aos="fade-right">
+                        <p class="text-center text-md-start">Get Updated the Latest Newsletter</p>
+                    </div>
+
+                    <div class="col-md-6 mt-3 mt-md-0" data-aos="fade-left">
+                        <form class="d-md-flex gap-3">
+                            <input type="email" name="newsletterEmail" id="newsletterEmail" class="form-control col" placeholder="Enter your email Address" required data-aos="fade-up" data-aos-delay="200">
+                            <div class="form-btn col-auto text-center mt-3 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+                                <button type="submit" class="btn btn-accent px-4 p-3">
+                                    Subscribe Now
+                                    <div class="d-inline-block">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.0477 3.05293C18.8697 0.707361 2.48648 6.4532 2.50001 8.551C2.51535 10.9299 8.89809 11.6617 10.6672 12.1581C11.7311 12.4565 12.016 12.7625 12.2613 13.8781C13.3723 18.9305 13.9301 21.4435 15.2014 21.4996C17.2278 21.5892 23.1733 5.342 21.0477 3.05293Z" stroke="white" stroke-width="1.5"/>
+                                            <path d="M11.5 12.5L15 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Newsletter Section -->
+
+
+        <footer class="footer-wrapper bg-title footer-layout2">
+            <div class="widget-area">
+                <div class="px-5">
+                    <div class="row justify-content-between gy-5">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="footer-about" data-aos="fade-up" data-aos-duration="800">
+                                <div class="footer-about_logo" data-aos="fade-down" data-aos-duration="800">
+                                    <a href="home-travel.html"><img src="img/kunbis_logo_outline.webp" alt="Tourm" /></a>
+                                </div>
+                                <p class="footer-about_text" data-aos="fade-up" data-aos-duration="800">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately create interactive infrastructures</p>
+                                <div class="footer-about_social gap-2 gap-lg-1" data-aos="fade-up" data-aos-duration="800">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> 
+                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> 
+                                    <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="footer-nav" data-aos="fade-up" data-aos-duration="800">
+                                <h3 class="footer_title">Quick Links</h3>
+                                <ul class="footer-nav_menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="service.html">Our Service</a></li>
+                                    <li><a href="contact.html">Terms of Service</a></li>
+                                    <li><a href="contact.html">Tour Booking Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="footer-contact" data-aos="fade-up" data-aos-duration="800">
+                                <h3 class="footer_title">Get In Touch</h3>
+                                <div class="th-widget-contact">
+                                    <div class="info-box_text d-flex align-items-center gap-2" data-aos="fade-up" data-aos-duration="800">
+                                        <div class="icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="details">
+                                            <p><a href="tel:+01234567890" class="info-box_link">+01 234 567 890</a></p>
+                                            <p><a href="tel:+09876543210" class="info-box_link">+09 876 543 210</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="info-box_text d-flex align-items-center gap-2" data-aos="fade-up" data-aos-duration="800">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="details">
+                                            <p><a href="mailto:info@kunbisunique.com" class="info-box_link">info@kunbisunique.com</a></p>
+                                            <p><a href="mailto:support@kunbisunique.com" class="info-box_link">support@kunbisunique.com</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="info-box_text d-flex align-items-center gap-2" data-aos="fade-up" data-aos-duration="800">
+                                        <div class="icon">
+                                            <i class="fa fa-location-dot"></i>
+                                        </div>
+                                        <div class="details">
+                                            <p>Suite 35, Mojoyinola House, Caterpillar Bus Stop, Monatan, Ibadan</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 mt-3 mt-md-0">
-                            <form class="contact-form form wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.5s">
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-group has-error has-danger">
-                                                <input id="form_name" type="text" name="name"
-                                                    placeholder="Type Your Name" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-group has-error has-danger">
-                                                <input id="form_email" type="email" name="email"
-                                                    placeholder="Type Your Email" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-group has-error has-danger">
-                                                <input id="form_subject" type="text" name="subject"
-                                                    placeholder="Type Your Subject" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea id="form_message" name="message"
-                                                    placeholder="Type Your Message" rows="4"
-                                                    required="required"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <a href="#" class="btn-main"><span>SEND MESSAGE</span></a>
-                                        </div>
+
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="widget footer-widget" data-aos="fade-up" data-aos-duration="800">
+                                <h3 class="footer_title">Instagram Post</h3>
+                                <div class="sidebar-gallery">
+                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
+                                        <img src="img/widget/gallery_1_1.jpg" alt="Gallery Image" />
+                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
+                                        <img src="img/widget/gallery_1_2.jpg" alt="Gallery Image" />
+                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
+                                        <img src="img/widget/gallery_1_3.jpg" alt="Gallery Image" />
+                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
+                                        <img src="img/widget/gallery_1_4.jpg" alt="Gallery Image" />
+                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
+                                        <img src="img/widget/gallery_1_5.jpg" alt="Gallery Image" />
+                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
+                                        <img src="img/widget/gallery_1_6.jpg" alt="Gallery Image" />
+                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End Contact-->
-
-            <!-- Start Footer -->
-            <footer class="footer theme-bg overflow-hidden">
+            </div>
+            <div class="copyright-wrap">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="footer-top">
-                                <div class="foot_logo d-flex align-items-center justify-content-center">
-                                    <img src="img/logo-light.png" class="img-fluid d-block" alt="">
-                                </div>
-                                <!-- <p class="ftr-about mx-auto">this dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. this dolor sit amet.</p> -->
-                            </div>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="800">
+                            <p class="copyright-text">Copyright 2024 <a href="https://kunbisunique.com">Kunbis Unique Venture</a>. All Rights Reserved.</p>
                         </div>
-                        <div class="col-lg-12">
-                            <ul class="footer_menu_list list-unstyled mb-0 d-flex justify-content-center">
-                                <li><a href="">Visa Application</a></li>
-                                <li><a href="">Tour Package</a></li>
-                                <li><a href="">Real Estate Management</a></li>
-                                <li><a href="">Buy Car</a></li>
-                                <li><a href="">Buy Land</a></li>
-                                <li><a href="">Passport Application</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="copyrights">
-                                <p class="mb-0 text-center">2024 © <a href="#"
-                                        class="text-white font-weight-bold">Kunbis Unique Ventures.</a>. All rights
-                                    reserved.
-                                    <br>Design by <a href="https://codewithemperor.github.io" class="font-weight-bold"
-                                        style="color: var(--kunbis-base);">CodewithEmperor.</a>
-                                </p>
+                        <div class="col-md-6 text-end d-none d-md-block" data-aos="fade-up" data-aos-duration="800">
+                            <div class="footer-card d-flex justify-content-end align-items-center">
+                                <span class="footer-card_title">We Accept</span> 
+                                <img src="img/cards.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- End Footer -->
+            </div>
+        </footer>
 
-        </div>
-    </div>
-    <!-- End Wrapper -->
+         <!-- jQuery -->
+         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+         <!-- Bootstrap JS -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Start Cursor -->
-    <div class="circle"></div>
-    <div class="circle-follow"></div>
-    <!-- End Cursor -->
+        <!-- Include Typed.js script -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+         <!-- AOS JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ 
+         
+         
+         <!-- Custom JS -->
+         <script src="js/main.js"></script>
+         <script>
+            var typed = new Typed("#typed-text", {
+              strings: [
+                "affordable travel packages.",
+                "luxury vacation deals.",
+                "tailored tour experiences.",
+                "prime property listings.",
+                "quality car sales.",
+                "trusted automobile solutions."
+              ],
+              typeSpeed: 50,
+              backSpeed: 30,
+              loop: true
+            });
+        </script>
+        
 
-    <!-- plugins -->
-    <!-- <script src="js/pace.js"></script> -->
-    <script src="js/gsap.js"></script>
-    <script src="js/TweenMax.js"></script>
-    <script src="js/splitting.js"></script>
-    <script src="js/simpleParallax.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.magnific-popup.js"></script>
-
-
-    <!-- custom scripts -->
-    <script src="js/main.js"></script>
-
-</body>
-
-
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              loop: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 250,
+                modifier: 1,
+                slideShadows: true,
+              },
+            });
+          </script>
+          
+    </body>
 </html>
