@@ -120,8 +120,11 @@ img {
 .global-img {
     position: relative;
     overflow: hidden;
-    -webkit-transition: all 0.5s ease-out;
+    -webkit-transition:;
     transition: all 0.5s ease-out;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 .global-img:after {
     background: rgba(255, 255, 255, 0.5);
@@ -563,7 +566,7 @@ video {
      07.DIVISION
 ================================*/
 
-.division, .six-destination {
+.division, .background2 {
     background: url(../img/bg/pattern1.webp);
 }
 
@@ -1126,7 +1129,8 @@ video {
 }
 
 .contact-page__input-box input[type="text"],
-.contact-page__input-box input[type="email"] {
+.contact-page__input-box input[type="email"],
+select {
     background-color: var(--light);
     border: 1px solid rgba(var(--pColor-rgb), .20);
     padding-left: 20px;
@@ -1142,7 +1146,8 @@ video {
 }
 
 .contact-page__input-box input[type="text"]:hover,
-.contact-page__input-box input[type="email"]:hover {
+.contact-page__input-box input[type="email"]:hover,
+select {
     border: 1px solid rgba(var(--pColor-rgb), 1);
 }
 
@@ -1199,7 +1204,8 @@ video {
     border-radius: 16px 16px 0 0;
     
 }
-.contact-form-area input.form-control {
+.contact-form-area input.form-control,
+select.form-select {
     height: 56px;
     padding: 0 25px 0 25px;
     padding-right: 50px;
@@ -1214,7 +1220,8 @@ video {
     transition: 0.4s ease-in-out;
 }
 
-textarea {
+textarea,
+select {
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -1223,13 +1230,15 @@ textarea {
 }
 
 input.form-control:hover,
-textarea:hover {
+textarea:hover,
+select:hover {
     border: 1px solid var(--tColor);
     background-color: rgba(53, 54, 58, .02);
     box-shadow: 0 0 5px rgba(53, 54, 58, .2);
 }
 
-.contact-form-area input.form-control:focus {
+.contact-form-area input.form-control:focus,
+select.form-select:focus {
     outline: none;
     border: 1px solid var(--tColor);
     background-color: rgba(53, 54, 58, .02);

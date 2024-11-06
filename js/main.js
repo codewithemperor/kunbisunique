@@ -49,7 +49,7 @@ var swiper = new Swiper(".aboutUs", {
   var swiper = new Swiper(".destination-area", {
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     loop: true,
     spaceBetween: 15,
     
@@ -63,7 +63,7 @@ var swiper = new Swiper(".aboutUs", {
 var swiper = new Swiper(".tour-area", {
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     loop: true,
     spaceBetween: 15,
     
