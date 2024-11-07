@@ -11,7 +11,6 @@ window.onscroll = function() {
         element.classList.add('fixed-top');
 
     } else {
-        element.classList.add('position-absolute');
         element.classList.remove('fixed-top');
     }
 };

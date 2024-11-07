@@ -66,7 +66,7 @@ a {
     text-decoration: none;
 }
 
-.title {
+.title, .title1 {
     position: relative;
     display: inline-block;
     font-weight: 700;
@@ -381,6 +381,14 @@ img {
 .banner-2 .title::before,
 .banner-2 .title::after{
     background-color: #fff;
+}
+
+.banner-2{
+    min-height: 200px;
+    background: linear-gradient(#2d2d2d, rgba(166, 0, 0, 0.9)), url(/img/portfolio/5.jpg);
+    background-size: cover;
+    background-position: center center;
+    
 }
 
 .shape-1 img,
@@ -1480,3 +1488,46 @@ select.form-select:focus {
 .six-destination .position-relative:hover .card-1 {
   opacity: 1;
 }
+
+
+/* Study  */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .feature {
+    display: flex;
+    padding: 5px 30px;
+    width: 100%;
+  }
+  
+  .feature-list .feature .icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-right: 10px;
+  }
+  
+  .feature-list .feature .icon i {
+    font-size: 14px;
+    color: var(--sColor);
+  }
+  
+  .feature-list .feature strong {
+    color: var(--dark);
+  }
+  
+  .feature-list .feature .text {
+    width: 100%;
+    line-height: 150%;
+    font-size: 120%;
+  }
