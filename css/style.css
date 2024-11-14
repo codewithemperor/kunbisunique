@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
     color: var(--textColor);
     line-height: normal;
     font-weight: 400;
@@ -39,7 +39,7 @@ body {
     font-family: var(--kunbis-font);
     overflow-x: hidden;
     background: rgba(255, 255, 255, .4);
-    background-image: url(../img/bg/pattern.webp);
+    /* background-image: url(../img/bg/pattern.webp); */
     background-clip: border-box; 
     background-attachment: fixed; 
     background-blend-mode: soft-light; 
