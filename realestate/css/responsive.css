@@ -1,0 +1,154 @@
+﻿/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) { 
+    
+    .slider-hero .work .img:after {
+        width: 100%;
+    }
+
+    .ftco-search .nav-pills .nav-link:hover:after {
+        opacity: 0;
+    }
+    
+    .ftco-search .nav-pills .nav-link.active:after {
+        opacity: 0;
+    }
+    
+    .ftco-search .nav-pills .nav-link {
+        font-size: 14px;
+    }
+
+    .search-property-1 .form-group {
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .search-property-1 .form-group .form-control.btn {
+        padding: 20px;
+    }
+
+    .search-property-1 .form-group .icon {
+        left: 0;
+    }
+
+    .property-wrap {
+        margin-bottom: 40px;
+    }
+
+    .agent {
+        margin-bottom: 30px;
+    }
+
+    .ftco-section {
+        padding: 6em 0;
+    }
+
+    .ftco-intro h2,
+    .ftco-intro .h2 {
+      font-size: 20px;
+    }
+
+    .heading-section h2,
+    .heading-section .h2 {
+      font-size: 28px;
+    }
+
+    .blog-entry {
+        margin-bottom: 30px;
+    }
+
+
+
+   
+
+
+
+
+
+}
+
+@media (max-width: 767.98px) {
+
+    .ftco-navbar-light .navbar-brand {
+        color: #fff; 
+    }
+
+    .ftco-navbar-light .navbar-nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-right: 0; 
+    }
+
+    .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+        color: #fff;
+        background: transparent; 
+    } 
+
+    .slider-hero .work .text h2, .slider-hero .work .text .h2 {
+        font-size: 40px; 
+    }
+
+    .ftco-intro {
+        background-position: center center !important; 
+    }
+
+    #map {
+        height: 300px; 
+    }
+
+   
+}
+
+/* Small devices (landscape phones, between 576px and 767.98px) */
+@media (min-width: 576.2px) and (max-width: 767.98px) {  
+    
+
+      
+}
+
+@media (min-width: 768px) {
+    
+    
+}
+
+@media (max-width: 991.98px) {
+    
+    .ftco-navbar-light {
+        background: #fff !important;
+        position: relative;
+        top: 0;
+        padding: 7px 0;
+    }
+    
+    .ftco-navbar-light .navbar-nav {
+        padding-top: 20px;
+        padding-bottom: 20px; 
+    }
+
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
+        display: inline-block; 
+    }
+
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 1rem;
+        padding-top: 0;
+        color: #575757; 
+    }
+
+        
+
+
+    
+}
+
+/* Medium devices (tablets, between 768px and 991.98px) */
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+}
+
+/* Large  devices (desktop, 992px and up) */
+@media (min-width: 992px) { 
+    
+}

@@ -27,7 +27,7 @@ html {
     max-width: 100%;
     width: 100%;
     min-width: 100%;
-    border: 1px solid var(--pColor);
+    /* border: 1px solid var(--pColor); */
 }
 
 body {
@@ -127,11 +127,11 @@ img {
 .global-img {
     position: relative;
     overflow: hidden;
-    -webkit-transition:;
+    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
 }
 .global-img:after {
     background: rgba(255, 255, 255, 0.5);
@@ -223,10 +223,10 @@ img {
     -ms-transition: transform 0.5s ease;
     -o-transition: transform 0.5s ease;
     transform: translate(-50%, -50%) scale(0);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
 }
 
 .btn-accent:hover::before {
@@ -712,6 +712,10 @@ img {
     top: 0;
     opacity: 0;
     transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
 }
 
 .team_img img {
@@ -738,10 +742,6 @@ img {
     padding: 12px 20px 30px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
 }
 
 .team_title {
@@ -912,7 +912,7 @@ img {
     font-size: 30px;
     font-weight: 600;
     line-height: 40px;
-    color: var(--kunbis-white);
+    color: var(--light);
     margin-top: 21px;
     margin-bottom: 24px;
     font-family: var(--kunbis-font);
@@ -1315,7 +1315,7 @@ select.form-select:focus {
     }
     
     .info-box_text a:hover {
-        color: var(--theme-color);
+        color: var(--pColor);
     }
 
     .info-box_text:not(:last-child) {
@@ -1372,7 +1372,7 @@ select.form-select:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: var(--white-color);
+    color: var(--light);
     visibility: hidden;
     opacity: 0;
     -webkit-transform: translate(-50%, 20px);
@@ -1455,7 +1455,7 @@ select.form-select:focus {
 }
 .destination-item .th-btn {
     padding: 10px 25px;
-    border: 1px solid var(--theme-color);
+    border: 1px solid var(--pColor);
     font-weight: 500;
 }
 
