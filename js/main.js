@@ -1,3 +1,4 @@
+AOS.init();
 window.onscroll = function() {
     const element = document.querySelector('.navbar');
     const scrollPosition = window.scrollY; // Get the scroll position on the Y-axis

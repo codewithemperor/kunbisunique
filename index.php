@@ -2,7 +2,7 @@
     <head>
         <?php include './includes/header.php'?>
     </head>
-    <body>
+    <body class="">
        
         <!-- Start Navbar  -->
         <nav class="navbar navbar-expand-lg navbar-light py-0 pt-2" >
