@@ -24,25 +24,24 @@
 }
 
 html {
-    max-width: 100%;
-    width: 100%;
-    min-width: 100%;
-    /* border: 1px solid var(--pColor); */
-}
+   /* overflow-x: hidden; */
+  }
 
 body {
-    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: var(--kunbis-font);
     color: var(--textColor);
     line-height: normal;
     font-weight: 400;
     font-size: 14px;
-    font-family: var(--kunbis-font);
-    overflow-x: hidden;
     background: rgba(255, 255, 255, .4);
-    /* background-image: url(../img/bg/pattern.webp); */
-    background-clip: border-box; 
-    background-attachment: fixed; 
+    background-image: url(../img/bg/pattern.webp);
+    /* background-clip: border-box;  */
+    /* background-attachment: fixed;  */
     background-blend-mode: soft-light; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 section {
@@ -70,6 +69,7 @@ p {
 a {
     text-decoration: none;
 }
+
 
 .title, .title1 {
     position: relative;
@@ -1241,10 +1241,7 @@ select.form-select:focus {
     }
 
     .footer-nav_menu li:hover a{
-        color: var(--light);
-        text-decoration: underline;
-        text-decoration-color: var(--light);
-        -moz-text-decoration-color: var(--light);
+        color: rgba(252, 58, 58, 0.874);
 }
     
     .footer-nav_menu li::before {
@@ -1315,7 +1312,7 @@ select.form-select:focus {
     }
     
     .info-box_text a:hover {
-        color: var(--pColor);
+        color: rgba(252, 58, 58, 0.874);
     }
 
     .info-box_text:not(:last-child) {

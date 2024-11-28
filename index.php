@@ -1,48 +1,6 @@
-﻿    <html>
+﻿<html>
     <head>
-        <!-- Metas -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="keywords"
-            content="Travel and Tours, Car Rental, Automobile Services, Real Estate Management, Property Sales, Vacation Planning, Luxury Car Rentals, Estate Advisory" />
-        <meta name="author" content="codewithemperor" />
-        <meta name="description"
-            content="Kunbis offers premium services in travel and tours, automobile rentals, and estate management. We ensure top-notch experiences for clients seeking vacation planning, real estate investment, and luxury car rentals." />
-        
-        <!-- Title  -->
-        <title>Kunbis - Travel, Automobile, and Estate Management Solutions</title>
-
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
-        <link rel="manifest" href="img/favicons/site.html" />    
-        
-    
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com/">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-    
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <!-- Swipper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-        <!-- AOS (Animate on Scroll) -->
-        <link href="realestate/css/aos.css" rel="stylesheet">
-    
-        <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
-
-
+        <?php include './includes/header.php'?>
     </head>
     <body>
        
@@ -102,7 +60,7 @@
         <!-- End Navbar -->
 
         <!-- Start Banner -->
-        <section class="banner py-5 position-relative" data-aos="fade-up">
+        <section class="banner py-5 position-relative">
             <div class="shape-1 ms-lg-5 position-absolute top-50 start-0 translate-middle-y" data-aos="fade-right">
                 <img src="img/svg/shape_1.png" alt="img" data-aos="zoom-in">
             </div>
@@ -593,121 +551,7 @@
         <!-- Ends FAQ -->
 
         <!-- Start Our Staff -->        
-        <section class="team">
-            <div class="px-4">
-                <div class="col-12 text-center">
-                    <p data-aos="fade-up">Meet Our Dedicated Staff</p>
-                    <h2 class="title mb-5 mt-0" data-aos="fade-up">Expert Behind Our Success</h2>
-                </div>
-       
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team_single" data-aos="zoom-in">
-                            <div class="team_img-box">
-                                <div class="team_img">
-                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
-                                </div>
-                            </div>
-                            <div class="team_content p-2 text-center">
-                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
-                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
-
-                                <ul class="team_social list-unstyled d-flex justify-content-center">
-                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
-                                </ul>
-                        
-                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
-                                    <i class="fa fa-phone"></i>
-                                    <p>+234 803 400 77781</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team_single" data-aos="zoom-in">
-                            <div class="team_img-box">
-                                <div class="team_img">
-                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
-                                </div>
-                            </div>
-                            <div class="team_content p-2 text-center">
-                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
-                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
-
-                                <ul class="team_social list-unstyled d-flex justify-content-center">
-                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
-                                </ul>
-                        
-                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
-                                    <i class="fa fa-phone"></i>
-                                    <p>+234 803 400 77781</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team_single" data-aos="zoom-in">
-                            <div class="team_img-box">
-                                <div class="team_img">
-                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
-                                </div>
-                            </div>
-                            <div class="team_content p-2 text-center">
-                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
-                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
-
-                                <ul class="team_social list-unstyled d-flex justify-content-center">
-                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
-                                </ul>
-                        
-                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
-                                    <i class="fa fa-phone"></i>
-                                    <p>+234 803 400 77781</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team_single" data-aos="zoom-in">
-                            <div class="team_img-box">
-                                <div class="team_img">
-                                    <img src="img/team/team-1-1.jpg" alt="" data-aos="fade-up">
-                                </div>
-                            </div>
-                            <div class="team_content p-2 text-center">
-                                <h4 class="team_title mt-2" data-aos="fade-up">Olakunle Olafemi Olaleye</h4>
-                                <p class="mb-2" data-aos="fade-up">Chief Executive Director</p>
-
-                                <ul class="team_social list-unstyled d-flex justify-content-center">
-                                    <li><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-facebook"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li class="ms-3"><a class="link-body-emphasis fs-5" href="#" data-aos="fade-up"><i class="fa-brands fa-whatsapp"></i></a></li>                
-                                </ul>
-                        
-                                <a href="tel:+2348034007778" class="team_number gap-2 d-flex justify-content-center align-items-center" data-aos="fade-up">
-                                    <i class="fa fa-phone"></i>
-                                    <p>+234 803 400 77781</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-            
-                </div>
-            </div>
-        </section>
+        <?php include './includes/team.php'?>
         <!-- End Our Staff -->
 
         
@@ -782,169 +626,20 @@
         <!-- End Contact us -->
 
         <!-- Start Newsletter Section -->
-        <section class="newsletter" data-aos="fade-up">
-            <div class="container">
-                <div class="d-md-flex align-items-center justify-content-between">
-                    <div class="col-md-5" data-aos="fade-right">
-                        <p class="text-center text-md-start">Get Updated the Latest Newsletter</p>
-                    </div>
-
-                    <div class="col-md-6 mt-3 mt-md-0" data-aos="fade-left">
-                        <form class="d-md-flex gap-3">
-                            <input type="email" name="newsletterEmail" id="newsletterEmail" class="form-control col" placeholder="Enter your email Address" required data-aos="fade-up" data-aos-delay="200">
-                            <div class="form-btn col-auto text-center mt-3 mt-md-0" data-aos="fade-up" data-aos-delay="300">
-                                <button type="submit" class="btn btn-accent px-4 p-3">
-                                    Subscribe Now
-                                    <div class="d-inline-block">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21.0477 3.05293C18.8697 0.707361 2.48648 6.4532 2.50001 8.551C2.51535 10.9299 8.89809 11.6617 10.6672 12.1581C11.7311 12.4565 12.016 12.7625 12.2613 13.8781C13.3723 18.9305 13.9301 21.4435 15.2014 21.4996C17.2278 21.5892 23.1733 5.342 21.0477 3.05293Z" stroke="white" stroke-width="1.5"/>
-                                            <path d="M11.5 12.5L15 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php include './includes/newsletter.php'?>
         <!-- End Newsletter Section -->
 
+        <!-- Start Footer Section -->
+        <?php include './includes/footer.php'?>
+        <!-- End Footer Section -->
+       
 
-        <footer class="footer-wrapper bg-title footer-layout2">
-            <div class="widget-area">
-                <div class="px-5">
-                    <div class="row justify-content-between gy-5">
-                        <div class="col-md-6 col-xl-3">
-                            <div class="footer-about" data-aos="fade-up" data-aos-duration="800">
-                                <div class="footer-about_logo" data-aos="fade-down" data-aos-duration="800">
-                                    <a href="home-travel.html"><img src="img/kunbis_logo_outline.webp" alt="Tourm" /></a>
-                                </div>
-                                <p class="footer-about_text" data-aos="fade-up" data-aos-duration="800">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately create interactive infrastructures</p>
-                                <div class="footer-about_social gap-2 gap-lg-1" data-aos="fade-up" data-aos-duration="800">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> 
-                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> 
-                                    <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-                                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-xl-auto">
-                            <div class="footer-nav" data-aos="fade-up" data-aos-duration="800">
-                                <h3 class="footer_title">Quick Links</h3>
-                                <ul class="footer-nav_menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="service.html">Our Service</a></li>
-                                    <li><a href="contact.html">Terms of Service</a></li>
-                                    <li><a href="contact.html">Tour Booking Now</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                
-                        <div class="col-md-6 col-xl-auto">
-                            <div class="footer-contact" data-aos="fade-up" data-aos-duration="800">
-                                <h3 class="footer_title">Get In Touch</h3>
-                                <div class="th-widget-contact">
-                                    <div class="info-box_text d-flex align-items-center gap-2" data-aos="fade-up" data-aos-duration="800">
-                                        <div class="icon">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                        <div class="details">
-                                            <p><a href="tel:+01234567890" class="info-box_link">+01 234 567 890</a></p>
-                                            <p><a href="tel:+09876543210" class="info-box_link">+09 876 543 210</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="info-box_text d-flex align-items-center gap-2" data-aos="fade-up" data-aos-duration="800">
-                                        <div class="icon">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>
-                                        <div class="details">
-                                            <p><a href="mailto:info@kunbisunique.com" class="info-box_link">info@kunbisunique.com</a></p>
-                                            <p><a href="mailto:support@kunbisunique.com" class="info-box_link">support@kunbisunique.com</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="info-box_text d-flex align-items-center gap-2" data-aos="fade-up" data-aos-duration="800">
-                                        <div class="icon">
-                                            <i class="fa fa-location-dot"></i>
-                                        </div>
-                                        <div class="details">
-                                            <p>Suite 35, Mojoyinola House, Caterpillar Bus Stop, Monatan, Ibadan</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-xl-auto">
-                            <div class="widget footer-widget" data-aos="fade-up" data-aos-duration="800">
-                                <h3 class="footer_title">Instagram Post</h3>
-                                <div class="sidebar-gallery">
-                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
-                                        <img src="img/widget/gallery_1_1.jpg" alt="Gallery Image" />
-                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
-                                        <img src="img/widget/gallery_1_2.jpg" alt="Gallery Image" />
-                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
-                                        <img src="img/widget/gallery_1_3.jpg" alt="Gallery Image" />
-                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
-                                        <img src="img/widget/gallery_1_4.jpg" alt="Gallery Image" />
-                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
-                                        <img src="img/widget/gallery_1_5.jpg" alt="Gallery Image" />
-                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <div class="gallery-thumb" data-aos="zoom-in" data-aos-duration="800">
-                                        <img src="img/widget/gallery_1_6.jpg" alt="Gallery Image" />
-                                        <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-wrap">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-md-6" >
-                            <p class="copyright-text">Copyright 2024 <a href="https://kunbisunique.com">Kunbis Unique Venture</a>. All Rights Reserved.</p>
-                        </div>
-                        <div class="col-md-6 text-end d-none d-md-block" >
-                            <div class="footer-card d-flex justify-content-end align-items-center">
-                                <span class="footer-card_title">We Accept</span> 
-                                <img src="img/cards.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-         <!-- jQuery -->
-         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         
-         <!-- Bootstrap JS -->
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- Include Typed.js script -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-         <!-- AOS JS -->
-         <script src="realestate/js/aos.js"></script>
+       
  
          
          

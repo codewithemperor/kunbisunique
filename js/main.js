@@ -1,7 +1,3 @@
-AOS.init({
-    duration: 500, // Duration of animation (in ms)
-  });
-
 window.onscroll = function() {
     const element = document.querySelector('.navbar');
     const scrollPosition = window.scrollY; // Get the scroll position on the Y-axis
